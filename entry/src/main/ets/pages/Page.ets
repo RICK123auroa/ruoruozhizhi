@@ -1,0 +1,52 @@
+import { BusinessError } from '@kit.BasicServicesKit';
+import { router } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct Page {
+  @State message: string = 'GO Next';
+
+  build() {
+    RelativeContainer() {
+      Text(this.message)
+        .id('PageHelloWorld')
+        .fontSize($r('app.float.page_text_font_size'))
+        .fontWeight(FontWeight.Bold)
+        .alignRules({
+          center: { anchor: '__container__', align: VerticalAlign.Center },
+          middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        })
+        .onClick(() => {
+          this.message = 'the SECOND';
+        })
+      Column(){
+      Button() {
+          Text('Back')
+            .fontSize(30)
+            .fontWeight(FontWeight.Bold)
+        }
+        .type(ButtonType.Capsule)
+        .margin({
+          top: 20
+        })
+        .backgroundColor('#0D9FFB')
+        .width('40%')
+        .height('5%')
+        // 返回按钮绑定onClick事件，点击按钮时返回到第一页
+        .onClick(() => {
+          console.info(`Succeeded in clicking the 'Back' button.`)
+          try {
+            // 返回第一页
+            router.back()
+            console.info('Succeeded in returning to the first page.')
+          } catch (err) {
+            let code = (err as BusinessError).code;
+            let message = (err as BusinessError).message;
+            console.error(`Failed to return to the first page. Code is ${code}, message is ${message}`)
+          }
+        })
+    }}
+    .height('100%')
+    .width('100%')
+  }
+}
