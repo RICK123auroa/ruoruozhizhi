@@ -5,7 +5,7 @@ struct ClassOneTask {
   @State fontSize: number = 24;
   @State offsetValue: number = 10;
   @State myText: string = "hello";
-  @State imagePath: string = 'common/home.jpg';
+  @State imagePath: string = 'home.jpg';
   @State imageUrl: string = 'www.baidu.com/img/flexible/logo/pc/result.png';
 
   myClickHandler(): void {
@@ -40,6 +40,7 @@ struct ClassOneTask {
         Image(this.imagePath)
           .width(this.count % 2 === 0 ? 100 : 200)
           .height(this.offsetValue + 100)
+          .backgroundColor(0xFFF09F)
 
         Image('https://' + this.imageUrl)
           .alt('common/play.jpg')
