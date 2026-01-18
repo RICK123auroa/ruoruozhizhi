@@ -1,0 +1,41 @@
+{
+  "modulePathMap": {
+    "entry": "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "D:\\newproject\\myProject02\\app\\API12\\WebComponent",
+  "nodeModulesPath": "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "entry",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry\\src\\main\\ets\\pages\\VuePage.ets",
+    "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry\\src\\main\\ets\\pages\\WebPage.ets"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [
+    {
+      "ohmurl": "@bundle:com.example.webcomponent/entry/ets/pages/VuePage",
+      "name": "VuePage",
+      "pageSourceFile": "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry\\src\\main\\ets\\pages\\VuePage.ets",
+      "buildFunction": "VuePageBuilder"
+    },
+    {
+      "ohmurl": "@bundle:com.example.webcomponent/entry/ets/pages/WebPage",
+      "name": "WebPage",
+      "pageSourceFile": "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry\\src\\main\\ets\\pages\\WebPage.ets",
+      "buildFunction": "WebPageBuilder"
+    }
+  ],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "anBuildOutPut": "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "D:\\newproject\\myProject02\\app\\API12\\WebComponent\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
+}

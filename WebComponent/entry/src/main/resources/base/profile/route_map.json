@@ -1,0 +1,20 @@
+{
+  "routerMap": [
+    {
+      "name": "VuePage",
+      "pageSourceFile": "src/main/ets/pages/VuePage.ets",
+      "buildFunction": "VuePageBuilder",
+      "data": {
+        "description" : "this is VuePage"
+      }
+    },
+    {
+      "name": "WebPage",
+      "pageSourceFile": "src/main/ets/pages/WebPage.ets",
+      "buildFunction": "WebPageBuilder",
+      "data": {
+        "description" : "this is WebPage"
+      }
+    }
+  ]
+}

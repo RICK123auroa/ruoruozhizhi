@@ -5,6 +5,7 @@ struct Content {
 
   build() {
     RelativeContainer() {
+
       Text(this.message)
         .id('ContentHelloWorld')
         .fontSize($r('app.float.page_text_font_size'))
